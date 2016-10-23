@@ -1,0 +1,47 @@
+Harprabh Sangha, hsswx7, M/W 9:30 am - 10:45 am
+
+Sites used to help with project:
+http://www.gnu.org/software/libc/manual/html_node/Example-of-Getopt.html - used to learn getopt
+http://www.gnu.org/software/libc/manual/html_node/Getopt-Long-Option-Example.html - used to learn getopt_long
+
+_________________How to Use__________________________________
+Please use the commands: 
+
+exe = executable : proj1
+
+-----commands-----
+-h or -help  : shows steps on how to use the program
+-nx        : changes the value of x
+-lfilename : change the log file name 
+
+-----examples------
+proj1-h -help -lfilename.txt -n32342 
+proj1 -h -help -l filename2.txt -n32423 
+
+----or ---
+proj1  // this was done to simply test proj1 without the 
+
+Wirting an invalid commands returns 0 and terminates the program -> program writes nothing to the logfile.txt
+
+---------Bugs with commands---------
+If you do -lfilename-nx this producess and error
+if you do -l-n it will name the file -n, I tried checking for -n but not matter -
+what type of if statement would detect that its -n but it does not work.            
+proj1 noncommands, simply runs proj1. proj1 random chars simply runs the programs | ex: proj1 eiafod.  
+____________________________________________________________________________________
+
+*******************Wiriting To File********************************************
+
+- When making a filename Please write it the name with .txt
+-If .txt is not added the file will still be Written onto the new name.
+
+-fopen I did use "a" , this allows multiple runs of the of proj1 and stored in the same file.
+********************************************************************************
+
+
+*********Time****************************************************************
+I have displayed nanoseconds by adding seconds*BILLION + nanoseconds. 
+I have commented out ctime which i prefer.
+
+
+
